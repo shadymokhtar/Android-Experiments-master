@@ -12,5 +12,8 @@
     <string name="title_activity_post">Post</string>
     <string name="title_activity_messaging">Messaging</string>
     <string name="title_section4">Messages</string>
+    <string name="title_section7">Statistics</string>
+    <string name="title_section6">Wall</string>
+    <string name="title_section5">About</string>
 
 </resources>

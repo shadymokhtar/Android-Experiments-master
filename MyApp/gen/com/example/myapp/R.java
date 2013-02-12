@@ -14,20 +14,24 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int menu_settings=0x7f070002;
+        public static final int button_profile=0x7f070002;
+        public static final int menu_settings=0x7f070003;
         public static final int pager=0x7f070000;
         public static final int pager_title_strip=0x7f070001;
     }
     public static final class layout {
-        public static final int activity_login_register=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_messaging=0x7f030002;
-        public static final int activity_post=0x7f030003;
-        public static final int activity_profile__viewer=0x7f030004;
-        public static final int messages=0x7f030005;
-        public static final int myaccount=0x7f030006;
-        public static final int network_mates=0x7f030007;
-        public static final int news_viewer=0x7f030008;
+        public static final int about=0x7f030000;
+        public static final int activity_login_register=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_messaging=0x7f030003;
+        public static final int activity_post=0x7f030004;
+        public static final int activity_profile__viewer=0x7f030005;
+        public static final int messages=0x7f030006;
+        public static final int myaccount=0x7f030007;
+        public static final int network_mates=0x7f030008;
+        public static final int news_viewer=0x7f030009;
+        public static final int statistics=0x7f03000a;
+        public static final int wall=0x7f03000b;
     }
     public static final class menu {
         public static final int activity_login_register=0x7f060000;
@@ -48,6 +52,9 @@ public final class R {
         public static final int title_section2=0x7f040002;
         public static final int title_section3=0x7f040001;
         public static final int title_section4=0x7f04000a;
+        public static final int title_section5=0x7f04000d;
+        public static final int title_section6=0x7f04000c;
+        public static final int title_section7=0x7f04000b;
     }
     public static final class style {
         /** 

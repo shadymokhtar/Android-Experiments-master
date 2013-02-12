@@ -1,5 +1,6 @@
 package com.example.myapp;
 
+import com.example.myapp.MyAccount;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -60,7 +62,7 @@ public class Profile_Viewer extends FragmentActivity {
 	 * one of the sections/tabs/pages.
 	 */
 	public class SectionsPagerAdapter extends FragmentPagerAdapter {
-
+		final int PAGE_COUNT = 3;
 		public SectionsPagerAdapter(FragmentManager fm) {
 			super(fm);
 		}
@@ -70,11 +72,20 @@ public class Profile_Viewer extends FragmentActivity {
 			// getItem is called to instantiate the fragment for the given page.
 			// Return a DummySectionFragment (defined as a static inner class
 			// below) with the page number as its lone argument.
-			Fragment fragment = new DummySectionFragment();
-			Bundle args = new Bundle();
-			args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 1);
-			fragment.setArguments(args);
-			return fragment;
+//			Fragment fragment = new DummySectionFragment();
+//			Bundle args = new Bundle();
+//			args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 1);
+//			fragment.setArguments(args);
+//			return fragment;
+			switch(position)
+    		{
+    			case 0:
+    				return new Wall();
+    			case 1:
+    				return new Statistics();
+    		}
+			return new About();
+    			
 		}
 
 		@Override
@@ -87,11 +98,11 @@ public class Profile_Viewer extends FragmentActivity {
 		public CharSequence getPageTitle(int position) {
 			switch (position) {
 			case 0:
-				return getString(R.string.title_section1).toUpperCase();
+				return getString(R.string.title_section5).toUpperCase();
 			case 1:
-				return getString(R.string.title_section2).toUpperCase();
+				return getString(R.string.title_section6).toUpperCase();
 			case 2:
-				return getString(R.string.title_section3).toUpperCase();
+				return getString(R.string.title_section7).toUpperCase();
 			}
 			return null;
 		}

@@ -24,7 +24,11 @@
         </activity>
         <activity
             android:name="com.example.myapp.Profile_Viewer"
-            android:label="@string/title_activity_profile__viewer" >
+            android:label="@string/title_activity_profile__viewer" 
+            android:parentActivityName="com.example.myapp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.myapp.Login_register_activity"
