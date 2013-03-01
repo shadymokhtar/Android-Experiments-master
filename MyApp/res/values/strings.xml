@@ -15,5 +15,6 @@
     <string name="title_section7">Statistics</string>
     <string name="title_section6">Wall</string>
     <string name="title_section5">About</string>
+    <string name="title_activity_my_url_thread">MyUrlThread</string>
 
 </resources>

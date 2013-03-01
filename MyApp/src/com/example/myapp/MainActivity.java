@@ -85,9 +85,9 @@ public class MainActivity extends FragmentActivity {
     			case 0:
     				return new MyAccount();
     			case 1:
-    				return new NewsFeeds();
-    			case 2:
     				return new PeopleInTheNetwork();
+    			case 2:
+    				return new NewsFeeds();
     		}
 			return new Messages();
     			
